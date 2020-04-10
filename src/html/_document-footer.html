@@ -1,0 +1,68 @@
+<div id="modal-cause" class="modal-cause modal-cause__open">
+
+    <div class="modal-cause__body">
+        <div class="modal-cause__close">
+            <i></i>
+            <i></i>
+        </div>
+        <p class="title-h2 form__title-h2--c-black">Вызвать замерщика</p>
+        <p class="form__text-default">Сьогодні такі карнизи – це розповсюджений та зручний спосіб управління великими та досить</p>
+        <form action="">
+            <input type="text" placeholder="Ваше имя">
+            <input type="text" placeholder="Ваше имя">
+            <textarea placeholder="Сообщение"></textarea>
+            <button class="btn-default btn-default--center">отправить</button>
+        </form>
+    </div>
+</div>
+<div class="modal-cause modal-back-call">
+
+    <div class="modal-cause__body">
+        <div class="modal-cause__close">
+            <i></i>
+            <i></i>
+        </div>
+        <p class="title-h2 form__title-h2--c-black">Обратный звонок</p>
+        <p class="form__text-default">Сьогодні такі карнизи – це розповсюджений та зручний спосіб управління великими та досить</p>
+        <form action="">
+            <input type="text" placeholder="Ваше имя">
+            <input type="text" placeholder="Ваше имя">
+            <button class="btn-default btn-default--center">отправить</button>
+        </form>
+    </div>
+</div>
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/wow.js"></script>
+<script>
+    var swiper = new Swiper('.product-first .swiper-container', {
+        speed: 800,
+        slidePreView: 1,
+        effect: 'fade',
+        autoplay: true,
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });
+    var wow = new WOW(
+        {
+            boxClass:     'wow',      // animated element css class (default is wow)
+            animateClass: 'animated', // animation css class (default is animated)
+            offset:       -100,          // distance to the element when triggering the animation (default is 0)
+            mobile:       false,       // trigger animations on mobile devices (default is true)
+            live:         true,       // act on asynchronously loaded content (default is true)
+            callback:     function(box) {
+                // the callback is fired every time an animation is started
+                // the argument that is passed in is the DOM node being animated
+            },
+            scrollContainer: null,    // optional scroll container selector, otherwise use window,
+            resetAnimation: true,     // reset animation on end (default is true)
+        }
+    );
+    wow.init();
+
+</script>
+</body>
+</html>
