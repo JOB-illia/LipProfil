@@ -1,1 +1,10 @@
 @import "./content-area";
+.test {
+	&__title {}
+	&__text {}
+}
+.text {
+	&__one {}
+}
+.test-box {
+}

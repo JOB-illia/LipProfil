@@ -11,3 +11,8 @@ html {
 * {
   box-sizing: border-box;
 }
+@include mmax(1084){
+  html {
+    font-size: 18px;
+  }
+}

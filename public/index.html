@@ -54,6 +54,7 @@
 <meta name="msapplication-TileImage" content="/favicon/mstile-144x144.png">
 <meta name="msapplication-config" content="/favicon/browserconfig.xml">
 <link rel="yandex-tableau-widget" href="/favicon/yandex-browser-manifest.json">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -64,15 +65,95 @@
 
         <div class="workspace__header">
             <header class="header">
-    header
+    <div class="header__top">
+        <a href="tel:+380 (098) 765-43-21" class="header__link-tel">+380 (098) 765-43-21</a>
+        <a href="index.html" class="header__logotype"><i class="icon-logo"></i></a>
+        <div class="header__search">
+            <form action="#" class="header__form-search">
+                <input type="text" placeholder="Пошук" autofocus>
+                <button type="submit"></button>
+            </form>
+            <i class="icon-search icon-search--click"></i>
+        </div>
+    </div>
+    <div class="header__bottom">
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li><a href="#">Технологія ЛСТК</a></li>
+                <li><a href="#">Проектування</a></li>
+                <li><a href="#">Каркасне будівництво</a></li>
+                <li class="main-li">
+                    <a href="#">Продукція <i class="icon-down-menu"></i></a>
+                    <ul class="main-li__children">
+                        <li><a href="#">Продукція 1</a></li>
+                        <li><a href="#">Продукція 2</a></li>
+                        <li><a href="#">Продукція 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Закінчені проекти</a></li>
+                <li><a href="#">Новини</a></li>
+                <li><a href="#">Галерея</a></li>
+                <li><a href="#">Про компанію</a></li>
+                <li><a href="#">Співпраця</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </nav>
+        <div class="header__burger">
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+    </div>
 </header>
         </div>
         <main class="workspace__content">
-            
+            <section class="first-slider">
+                <a href="#" class="first-slider__order link-order"><span>замовити</span></a>
+                <a href="#" class="first-slider__oval"><i class="icon-oval"></i></a>
+                <div class="first-slider__slider-body">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="first-slider__swiper-slide">
+                                    <div class="first-slider__bg">
+                                        <img src="img/photo5361557368548207267(1)%202.png" alt="">
+                                    </div>
+                                    <p class="first-slider__number-slider">01</p>
+                                    <div class="first-slider__solid"></div>
+                                    <h1 class="title-h1 first-slider__title-h1">Підсистеми для вентиляційних фасадів</h1>
+                                    <div class="first-slider__solid-big"></div>
+                                    <p class="first-slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="first-slider__swiper-slide">
+                                    <img src="img/2-15_2200x1400_acf_cropped%201.png" alt="" class="first-slider__bg">
+                                    <p class="first-slider__number-slider">02</p>
+                                    <div class="first-slider__solid"></div>
+                                    <h1 class="title-h1 first-slider__title-h1">Підсистеми для вентиляційних фасадів2</h1>
+                                    <div class="first-slider__solid-big"></div>
+                                    <p class="first-slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.2</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="first-slider__swiper-slide">
+                                    <img src="img/echo-grid-VwxbVvm8sRA-unsplash%201.png" alt="" class="first-slider__bg">
+                                    <p class="first-slider__number-slider">03</p>
+                                    <div class="first-slider__solid"></div>
+                                    <h1 class="title-h1 first-slider__title-h1">Підсистеми для вентиляційних фасадів3</h1>
+                                    <div class="first-slider__solid-big"></div>
+                                    <p class="first-slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.3</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"><i class="icon-slider-right"></i></div>
+                        <div class="swiper-button-prev"><i class="icon-slider-left"></i></div>
+                    </div>
+                </div>
+            </section>
         </main>
         <div class="workspace__footer">
             <footer class="footer">
-    footer
 </footer>
 
         </div>
@@ -81,11 +162,21 @@
     </div>
 </div>
 
-
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 <script src="js/main.js"></script>
 <script src="js/wow.js"></script>
 <script>
+    var swiper = new Swiper('.swiper-container', {
+        slidePreView: 1,
+        speed: 800,
+        effect: 'fade',
+        autoplay: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
     var wow = new WOW(
         {
             boxClass:     'wow',      // animated element css class (default is wow)

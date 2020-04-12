@@ -1,0 +1,358 @@
+.first-slider {
+  position: relative;
+  overflow: hidden;
+  margin-top: 28px;
+  padding-bottom: 67px;
+
+  &::before {
+    content: '';
+    background: rgba(25,25,25, 1);
+    width: 100%;
+    height: 430px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+  }
+  &__slider-body {
+    @include container(87.625%);
+    padding: 0 5px;
+    position: relative;
+
+  }
+
+  &__swiper-slide {
+    position: relative;
+    height: 700px;
+    width: calc(100% - 50px);
+    margin-right: 0;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    &::before {
+      content: '';
+      width: 100%;
+      margin: 0 auto;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      @include full-abs();
+      z-index: 2;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__number-slider {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    background: $c-white;
+    @include flc-center-center();
+    z-index: 999;
+    color: #2C2C2C;
+    top: 50px;
+    font-size: rem(62);
+    font-weight: 700;
+    left: -50px;
+    margin: 0;
+  }
+
+  &__solid {
+    background: $c-white;
+    width: 100px;
+    height: 3px;
+    z-index: 999;
+    display: block;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+  }
+
+  &__title-h1 {
+    position: relative;
+    z-index: 999;
+    margin: 0 0 0 140px;
+
+  }
+
+  &__solid-big {
+    width: 200px;
+    height: 3px;
+    background: $c-white;
+    display: block;
+    margin: 32px 0 45px 140px;
+    z-index: 999;
+
+  }
+
+  &__text {
+    position: relative;
+    z-index: 9999;
+    color: $c-white;
+    font-size: rem(15);
+    line-height: rem(23);
+    font-style: normal;
+    font-weight: normal;
+    width: 600px;
+    margin: 0 0 160px 140px;
+  }
+
+
+  .swiper-container {
+    width: calc(100% + 50px);
+    margin-left: -50px;
+    .swiper-button-next, .swiper-button-prev {
+      width: 53px;
+      height: 33.65px;
+      position: absolute;
+      top: 108.3px;
+      left: 241px;
+      outline: none;
+      transition: .5s;
+      &:hover{
+        > i {
+          transform: scale(1.1);
+        }
+      }
+      &::before{
+        content: '';
+        background: #1F62A8;
+        width: 75px;
+        height: 27px;
+        @include full-abs();
+        margin: auto;
+        left: -10.3px;
+        toP: -10.3px;
+      }
+      > i {
+        display: block;
+        z-index: 999;
+        position: relative;
+        transition: .5s;
+        opacity: 1;
+      }
+      &::after {
+        display: none;
+      }
+    }
+
+    .swiper-button-prev {
+      left: 155px;
+    }
+
+  }
+
+
+  &__order {
+    transform: rotate(180deg);
+    position: absolute;
+    z-index: 9999;
+    bottom: 100px;
+    right: 28px;
+    span {
+      transform: rotate(-90deg);
+    }
+  }
+  &__oval {
+    position: absolute;
+    right: 28px;
+    bottom: 457px;
+    z-index: 999;
+    transition: .5s;
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+}
+
+
+.link-order {
+  background: #1F62A8;
+  @include flc-center-center();
+  width: 115px;
+  height: 305px;
+  text-decoration: none;
+  transition: .5s;
+  &:hover{
+    background: darken(#1F62A8, 15%);
+  }
+  span {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $c-white;
+  }
+}
+
+.title-h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: rem(67);
+  line-height: rem(70);
+  color: $c-white;
+  transition: .5s;
+}
+.icon-slider-right {
+  @include icon(53px, 33.65px, 'arrow-right.svg');
+  display: block;
+}
+.icon-slider-left {
+  @include icon(53px, 33.65px, 'arrow-left.svg');
+  display: block;
+}
+.icon-oval {
+  @include icon(45px, 45px, 'oval.svg');
+  display: block;
+
+}
+@include mmax(1180){
+  .first-slider__oval{
+    display: none;
+  }
+  .first-slider__slider-body {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+@include mmax(1084){
+  .first-slider {
+    padding: 0;
+    height: calc(100vh - 112px);
+    .first-slider__order {
+      right: 0;
+      bottom: 0;
+    }
+  }
+  &__swiper-slide {
+    height: 100%;
+  }
+  .first-slider {
+    margin-top: 20px;
+  }
+  .first-slider__number-slider{
+    top: 0;
+    left: 0;
+  }
+  .first-slider .swiper-container .swiper-button-next, .first-slider .swiper-container .swiper-button-prev{
+    top: 50px;
+    left: 280px;
+  }
+  .first-slider .swiper-container .swiper-button-prev{
+    left: 180px;
+  }
+  .first-slider__solid{
+    display: none;
+  }
+  .title-h1{
+    font-size: rem(42);
+    margin-left: 0;
+    text-align: center;
+    line-height: rem(50);
+  }
+  .first-slider__solid-big {
+    margin: 50px auto;
+  }
+  .first-slider__text{
+    margin: 0 auto 160px;;
+    text-align: center;
+  }
+
+}
+@include mmax(918){
+  .first-slider{
+    margin-top: 0;
+    height: calc(100vh - 125px);
+  }
+  .first-slider__order{
+    top: 0;
+    right: 0;
+    transform: rotate(0);
+    width: 205px;
+    height: 55px;
+    span {
+      transform: rotate(0);
+    }
+  }
+}
+@include mmax(600){
+  .first-slider__text{
+    width: 100%;
+  }
+  .first-slider .swiper-container .swiper-button-next, .first-slider .swiper-container .swiper-button-prev{
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 0;
+    left: auto;
+  }
+  .first-slider .swiper-container .swiper-button-prev{
+    left: 60px;
+    right: auto;
+  }
+
+
+}
+@include mmax(446){
+  .title-h1{
+    font-size: rem(32);
+    line-height: rem(40);
+  }
+  .first-slider__solid-big{
+    margin: 20px auto;
+  }
+  .first-slider__text{
+    font-size: rem(12);
+    line-height: rem(16);
+  }
+  .first-slider .swiper-container .swiper-button-next, .first-slider .swiper-container .swiper-button-prev {
+    bottom: auto;
+    top: 102px;
+  }
+  }
+@include mmax(328){
+  .title-h1{
+    font-size: rem(24);
+    line-height: rem(30);
+  }
+  .first-slider__swiper-slide{
+    @include flc-center-center();
+  }
+  .first-slider__text{
+    margin: 0 auto 50px!important;
+    height: auto;
+  }
+  .first-slider {
+    &__swiper-slide{
+      width: 100%;
+    }
+    .swiper-container {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  .first-slider .swiper-container .swiper-button-prev{
+    left: 10px;
+  }
+}

@@ -7,13 +7,16 @@ $fz-root: 15;
 
 
 //wrap content;
-$wrap-content: 1630px;
+$wrap-content: 1260px;
+$wrap-content-big-desk: 67.7%;
 $wrap-content-mini: 1140px;
+
 // Colors
 $c-white: #ffffff;
 $c-black: #000000;
 $c-text-default: #000;
-
+$c-default: #191919;
+$c-hover: #1F62A8;
 
 // Time
 $time-fast: 300ms;
@@ -22,3 +25,9 @@ $time-fast: 300ms;
 $timing-functions: (
   'easeInOutCubic': cubic-bezier(0.645, 0.045, 0.355, 1)
 );
+@media (min-width: 1400px) {
+  $wrap-content: 67.7%;
+}
+@media (max-width: 1920px) {
+  $wrap-content: 67.7%;
+}

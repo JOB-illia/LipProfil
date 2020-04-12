@@ -1,8 +1,18 @@
-
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 <script src="js/main.js"></script>
 <script src="js/wow.js"></script>
 <script>
+    var swiper = new Swiper('.swiper-container', {
+        slidePreView: 1,
+        speed: 800,
+        effect: 'fade',
+        autoplay: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
     var wow = new WOW(
         {
             boxClass:     'wow',      // animated element css class (default is wow)
