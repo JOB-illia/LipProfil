@@ -20,5 +20,9 @@ $(document).ready(function () {
     $('.header__burger').on('click', function () {
         $(this).toggleClass('header__burger--open');
         $('.header__nav').slideToggle();
+    });
+    $('.product__filter-head').on('click', function () {
+        $(this).toggleClass('product__filter-head--open');
+        $(this).next().slideToggle();
     })
 });

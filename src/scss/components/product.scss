@@ -98,6 +98,18 @@
 }
 .down-btn--product {
 	margin-top: -90px;
+	&::before{
+		content: '';
+		width: calc(50% - 10px);
+		position: absolute;
+		bottom: 0;
+		left: 7px;
+		background: $c-default;
+		height: 3px;
+	}
+}
+.down-btn--product .down-btn__before-after::before {
+	display: none;
 }
 @include mmax(1340){
 	.product-first{

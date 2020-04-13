@@ -2,22 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2559e644-9d6e-4b6c-808b-bb39acb6e6bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/product.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/components/advantages.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/components/big-slider.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/components/down-btn.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/components/production.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/components/slider-production.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/_document-footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_document-footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/_index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/config/_default-variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/config/_default-variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/config/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/config/_global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/product-filter.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/product-filter.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/product.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/product.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +57,7 @@
       <workItem from="1586532427339" duration="804000" />
       <workItem from="1586548746280" duration="14043000" />
       <workItem from="1586688907416" duration="10097000" />
-      <workItem from="1586713959203" duration="12855000" />
+      <workItem from="1586713959203" duration="14949000" />
     </task>
     <servers />
   </component>
