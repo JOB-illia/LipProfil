@@ -1,0 +1,102 @@
+.down-btn {
+  position: relative;
+  overflow: hidden;
+  padding-top: 100px;
+  margin-top: -100px;
+  &__btn-body {
+    @include container(200px);
+    position: relative;
+  }
+  &__text {
+    background: $c-white;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.136209);
+    @include full-abs();
+    margin: auto;
+    width: 100px;
+    z-index: 99;
+    height: calc(100px - 10px);
+    padding-top: 15px;
+    bottom: auto;
+    font-size: rem(20);
+    font-weight: bold;
+    top: -59px;
+    text-align: center;
+
+  }
+  &__down {
+    width: 168px;
+    height: 65px;
+    padding-bottom: 20px;
+    border: 11px solid #191919;
+    display: block;
+    margin: 15px auto 0;
+    position: relative;
+    &:hover{
+      > i {
+        transform: scale(1.2);
+      }
+    }
+    > i {
+      margin: -20px auto 0;
+      z-index: 999;
+      display: block;
+      position: relative;
+      transition: .5s;
+    }
+    &::before{
+      content: '';
+      width: 158px;
+      height: 3px;
+      background: #191919;
+      @include full-abs();
+      left: calc(-100% - 20px);
+      margin: auto;
+      right: auto;
+    }
+    &::after{
+      content: '';
+      width: 158px;
+      height: 3px;
+      background: #191919;
+      @include full-abs();
+      right: calc(-100% - 20px);
+      margin: auto;
+      left: auto;
+    }
+  }
+  &__before-after {
+    position: relative;
+    display: block;
+    width: 168px;
+    height: 113px;
+    margin: 0 auto;
+    border-right: 3px solid #191919;
+    border-bottom: 3px solid #191919;
+    &::before{
+      content: '';
+      width: 500px;
+      height: 3px;
+      background: #191919;
+      @include full-abs();
+      margin: auto;
+      top: auto;
+      bottom: -3px;
+      right: auto;
+      left: calc(-100% - 300px);
+    }
+  }
+}
+.icon-down {
+  @include icon(36px, 55px, 'arrow-down.svg');
+  display: block;
+}
+@include mmax(600){
+  .down-btn {
+    margin-top: -70px;
+  }
+}
+@include mmax(414, 598){
+  .down-btn {
+    margin-top: -50px;
+  }
+}

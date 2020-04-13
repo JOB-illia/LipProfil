@@ -11,6 +11,10 @@ html {
 * {
   box-sizing: border-box;
 }
+.workspace {
+  position: relative;
+  overflow: hidden;
+}
 @include mmax(1084){
   html {
     font-size: 18px;

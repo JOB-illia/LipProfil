@@ -3,8 +3,9 @@
 <script src="js/main.js"></script>
 <script src="js/wow.js"></script>
 <script>
-    var swiper = new Swiper('.swiper-container', {
-        slidePreView: 1,
+
+    var swiper = new Swiper('.first-slider .swiper-container', {
+        slidesPerView: 1,
         speed: 800,
         effect: 'fade',
         autoplay: true,
@@ -12,6 +13,57 @@
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+    });
+    var swiper = new Swiper('.slider-production .swiper-container', {
+        loop: true,
+        centeredSlides: true,
+        speed: 800,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            975: {
+                slidesPerView: 2,
+            },
+            1197: {
+                slidesPerView: 3,
+                spaceBetween:220
+            }
+        }
+    });
+    var galleryThumbs = new Swiper('.big-slider .gallery-thumbs', {
+        spaceBetween: 10,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        breakpoints: {
+            320: {
+                slidesPerView: 3,
+            },
+            975: {
+                slidesPerView: 5,
+            },
+            1224: {
+                slidesPerView: 7,
+                spaceBetween:10
+            }
+        }
+    });
+    var galleryTop = new Swiper('.big-slider .gallery-top', {
+        autoplay: true,
+        speed: 1000,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        thumbs: {
+            swiper: galleryThumbs
+        }
     });
     var wow = new WOW(
         {
