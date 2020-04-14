@@ -1,0 +1,48 @@
+{% include "html/_document-header.html" %}
+
+<div class="workspace">
+    <div class="workspace__cont">
+
+        <div class="workspace__header">
+            {% include "html/header.html" %}
+        </div>
+        <main class="workspace__content">
+            <section class="form form-refresh">
+                <div class="production">
+                    <div class="production__body">
+                        <form action="#" class="form-body">
+                            <input type="text" placeholder="І'мя та Прізвище">
+                            <input type="tel" placeholder="Номер телефону">
+                            <input type="email" placeholder="Пошта">
+                            <button type="submit" class="btn-more">Відправити</button>
+                        </form>
+                        <div class="production__right-text">
+                            <h2 class="production__title title-h2">Контакти</h2>
+                            <a href="tel:+380 (098) 765-43-21" class="production__text text-default">+380 (098) 765-43-21</a>
+                            <div class="production__mini-solid production__mini-solid--animation"></div>
+                            <a href="tel:+380 (098) 765-43-21" class="production__text text-default">+380 (098) 765-43-21</a>
+                            <div class="production__mini-solid production__mini-solid--animation"></div>
+                            <a href="tel:+380 (098) 765-43-21" class="production__text text-default">+380 (098) 765-43-21</a>
+                            <div class="production__mini-solid production__mini-solid--animation "></div>
+                            <p class="production__text text-default"><span>м. Львів,</span>
+                                Городоцька 167б, оф. 13</p>
+                            <div class="production__mini-solid production__mini-solid--animation"></div>
+                            <a href="mailto:example@gmail.com" class="production__text text-default">example@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="big-maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.4768411324303!2d23.996415188045415!3d49.83445529496127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add8147242bbf%3A0x3ed137d177dbbc68!2z0LLRg9C70LjRhtGPINCT0L7RgNC-0LTQvtGG0YzQutCwLCAxNjcsIDEzLCDQm9GM0LLRltCyLCDQm9GM0LLRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0LjQvdCwLCA3OTAwMA!5e0!3m2!1sru!2spl!4v1586769822076!5m2!1sru!2spl" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <a href="" class="big-maps__open">Відкрити на карті</a>
+            </section>
+        </main>
+        <div class="workspace__footer">
+            {% include "html/footer.html" %}
+        </div>
+
+
+    </div>
+</div>
+
+{% include "html/_document-footer.html" %}

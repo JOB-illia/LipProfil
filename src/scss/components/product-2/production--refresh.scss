@@ -1,0 +1,98 @@
+.production--refresh {
+  position: relative;
+  margin: 40px 0;
+  &::before {
+    content: '';
+    width: 53px;
+    height: 3px;
+    background: $c-default;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  &::after {
+    content: '';
+    width: calc(100% - 53px);
+    height: 99%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom: 3px solid $c-default;
+    border-left: 3px solid $c-default;
+  }
+  .production__body {
+
+    .production__images {
+      order: 2;
+      text-decoration: none;
+      position: relative;
+      transition: .5s;
+      &::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: $c-blue;
+        @include full-abs();
+        transform: translate(40px, 40px);
+        z-index: 9999;
+        transition: .5s;
+
+      }
+      .link--center {
+        @include full-abs();
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        @include flc-center-center();
+        color: $c-white;
+        font-weight: bold;
+        transform: translate(40px, 40px);
+        z-index: 999999;
+        transition: .5s;
+
+      }
+      &:hover {
+        &::after{
+          background: darken($c-blue, 15%);
+        }
+        .link--center {
+          transform: scale(1.2) translate(30px, 30px);
+        }
+      }
+    }
+    .production__right-text {
+      position: relative;
+      overflow: hidden;
+    }
+  }
+}
+@include mmax(1248){
+  .production--refresh::before{
+    width: 10px;
+  }
+  .production--refresh::after {
+    width: calc(100% - 10px);
+
+  }
+}
+@include mmax(1000){
+  .production--refresh::before{
+    width: 10px;
+    display: none;
+  }
+  .production--refresh::after {
+    width: calc(100% - 10px);
+    display: none;
+
+  }
+  .production--refresh {
+    margin-top: 0;
+  }
+  .production--refresh .production__body .production__images .link--center {
+    transform: translate(0,0);
+
+  }
+  .production--refresh .production__body .production__images::after{
+    transform: translate(0,0);
+  }
+}

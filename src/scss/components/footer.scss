@@ -9,7 +9,7 @@
 	&__logo-menu-contact {
 		flex-basis: calc(100% - 24.5%);
 		@include space-between();
-		padding: 52px 0 51px ;
+		padding: 52px 0 20px ;
 	}
 	&__logo {
 		padding-left: 6.6%;
@@ -66,6 +66,21 @@
 			background: rgba(0,0,0,0.7);
 		}
 	}
+	&__copy {
+		flex-basis: 100%;
+		padding-top: 20px;
+		padding-left: 40px;
+		margin: 20px 0 0;
+		font-size: rem(14);
+		line-height: rem(20);
+		color: $c-white;
+		border-top: 1px solid $c-white;
+		text-decoration: none;
+		transition: .5s;
+		&:hover{
+			color: $c-hover;
+		}
+	}
 }
 .icon-logo-footer {
 	@include icon(200px, 133px, 'footer-logo.svg');
@@ -96,6 +111,12 @@
 	}
 }
 @include mmax(749){
+	.footer {
+		&__copy{
+			text-align: center;
+			padding-left: 0;
+		}
+	}
 	.footer__logo{
 		flex-basis: 100%;
 		padding-left: 0;

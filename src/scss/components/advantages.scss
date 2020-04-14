@@ -59,6 +59,8 @@
       background: $c-default;
       top: -20px;
       right: 20px;
+      animation: animeLineAbsolute 2s linear 1,animeLine_02Absolute 2.5s linear 2s infinite;
+
     }
     &::before{
       content: '';

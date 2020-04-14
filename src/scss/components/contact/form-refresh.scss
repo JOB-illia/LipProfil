@@ -1,0 +1,59 @@
+.form-refresh {
+  .production {
+    margin-top: 30px;
+    .production__body {
+      z-index: 999;
+      position: relative;
+
+      .form-body {
+        order: 2;
+      }
+
+      .production__right-text {
+        .production__title {
+          margin-bottom: 30px;
+        }
+
+        a {
+          text-decoration: none;
+          display: block;
+          margin-bottom: 10px;
+          padding-left: 10px;
+          transition: .5s;
+
+          &:hover {
+            color: $c-blue;
+          }
+        }
+
+        .production__mini-solid {
+          margin: 20px 30px;
+        }
+
+        p {
+          margin-bottom: 10px;
+          padding-left: 10px;
+
+          span {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+@include mmax(1217){
+  .form-refresh {
+    &::before {
+      width: 10px;
+    }
+    &::after {
+      width: calc(100% - 10px);
+    }
+  }
+}
+@include mmax(1000){
+  .form-refresh .production .production__body .production__right-text .production__mini-solid {
+    margin: 20px auto;
+  }
+}

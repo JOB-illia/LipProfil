@@ -49,6 +49,7 @@
     height: 3px;
     background: $c-default;
     margin: 61px 28px 59px;
+    transition: .5s;
   }
 }
 .link-absolute-left {
@@ -98,7 +99,12 @@
       margin-left: 5px;
     }
   }
+
 }
+
+
+
+
 .icon-down-menu--white {
   @include icon(5px, 9px, 'arrow-down-menu-white.svg');
   transform: rotate(90deg);
@@ -159,6 +165,54 @@
     right: -40px;
   }
 }
+.production__mini-solid--animation {
+  animation: animeLine 2s linear 1,animeLine_02 2.5s linear 2s infinite;
+}
+@keyframes animeLine {
+  0% {
+    margin-left: 0;
+    width: 150px;
+  }
+
+  100% {
+    margin-left: 110%;
+    width: 35px;
+  }
+}
+@keyframes animeLine_02 {
+  0% {
+    margin-left: -60%;
+    width: 150px;
+  }
+
+  100% {
+    margin-left: 110%;
+    width: 35px;
+  }
+}
+@keyframes animeLineAbsolute {
+  0% {
+    left: 0;
+    width: 150px;
+  }
+
+  100% {
+   left: 110%;
+    width: 35px;
+  }
+}
+@keyframes animeLine_02Absolute {
+  0% {
+    left: -60%;
+    width: 150px;
+  }
+
+  100% {
+    left: 110%;
+    width: 35px;
+  }
+}
+
 @include mmax(1318){
   .link-absolute-left {
     left: -179px;

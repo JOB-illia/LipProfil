@@ -1,0 +1,124 @@
+.gallery {
+  position: relative;
+  overflow: hidden;
+  margin: 20px 0;
+  padding-bottom: 20px;
+  &::before {
+    content: '';
+    width: 53px;
+    height: 3px;
+    background: $c-default;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  &::after {
+    content: '';
+    width: calc(100% - 53px);
+    height: 99%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom: 3px solid $c-default;
+    border-left: 3px solid $c-default;
+  }
+  &__row {
+    @include container($wrap-content);
+    padding: 0 15px;
+    @include space-between();
+  }
+  &__filter {
+    flex-basis: 100%;
+    margin: 20px 0;
+    @include flc-start();
+    align-items: stretch;
+    > a {
+      display: block;
+      border: 2px solid $c-blue;
+      margin: 10px;
+      font-size: rem(10);
+      line-height: rem(12);
+      list-style: rem(1);
+      font-weight: bold;
+      color: $c-default;
+      text-decoration: none;
+      position: relative;
+      transition: .5s;
+      span {
+        position: relative;
+        z-index: 9;
+        height: 40px;
+        padding: 0 15px;
+        @include flc-center-center();
+
+      }
+      &::after {
+        content: '';
+        width: 0;
+        height: 100%;
+        background: $c-hover;
+        @include full-abs();
+        margin: auto;
+      }
+      &:hover{
+        color: $c-white;
+        &::after {
+          animation: fadeIn-left-after .5s forwards;
+
+        }
+      }
+    }
+    .gallery__filter--active {
+      background: $c-blue;
+      color: $c-white;
+
+    }
+
+  }
+  &__item {
+    position: relative;
+    z-index: 999;
+    flex-basis: 295px;
+    height: 295px;
+    margin-bottom: 20px;
+    a > img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      object-position: center center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+@include mmax(1346){
+  .gallery {
+    &::before {
+      width: 10px;
+    }
+    &::after {
+      width: calc(100% - 10px);
+    }
+  }
+}
+@include mmax(918){
+  .gallery {
+    &__item {
+      flex-basis: 48%;
+    }
+  }
+}
+@include mmax(541){
+  .gallery {
+    &__item {
+      flex-basis: 100%;
+      height: auto;
+      padding: 0 0 70% 0;
+      a > img {
+        height: auto;
+        max-height: 100%;
+      }
+    }
+  }
+}

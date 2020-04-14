@@ -88,6 +88,23 @@
 
 	&__body-items {
 		flex-basis: 295px;
+		margin-bottom: 50px;
+		z-index: 999;
+
+	}
+}
+.product--before-line {
+	&::before {
+		height: 53%;
+	}
+	&::after {
+		content: '';
+		width: 3px;
+		height: 300px;
+		position: absolute;
+		right: 20%;
+		top: 53%;
+		background: $c-default;
 	}
 }
 .product-row-default {
@@ -153,7 +170,7 @@
 			letter-spacing: rem(1);
 			text-transform: uppercase;
 			color: $c-default;
-			margin-bottom: 40px;
+			margin-bottom: 15px;
 			position: relative;
 			transition: .5s;
 
@@ -181,7 +198,18 @@
 }
 .btn-more-default {
 }
+@include mmax(1209){
+	.product--before-line {
+		&::before{
+			height: 99%;
+		}
+		&::after {
+			display: none;
+		}
+	}
+}
 @include mmax(929){
+
 	.product__body-items{
 		flex-basis: 50%;
 	}

@@ -260,11 +260,22 @@
     opacity: 1;
   }
 }
+.advantages--animation::after{
+  animation: animeLineAbsolute 2s linear 1,animeLine_02Absolute 2.5s linear 2s infinite;
 
+}
 .swiper-slide {
   transition: .5s;
 }
+@media(min-width: 1623px){
+  .slider-production .swiper-button-next {
+    right: 550px;
+  }
+  .slider-production .swiper-button-prev {
+    right: 600px;
+  }
 
+}
 @include mmax(1196) {
   .slider-production .swiper-slide-active .slider-production__swiper {
     margin: 0 auto;

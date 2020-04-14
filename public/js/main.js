@@ -24,5 +24,24 @@ $(document).ready(function () {
     $('.product__filter-head').on('click', function () {
         $(this).toggleClass('product__filter-head--open');
         $(this).next().slideToggle();
-    })
+    });
+    $('a[href*="#yak"]').on('click', function (e) {
+        e.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        }, 500, 'linear');
+    });
+    $('.link-absolute-left a, .advantages__more, .product-items-default__btn-more, .production__text').hover(
+        function () {
+            $('.production__mini-solid').addClass('production__mini-solid--animation');
+            $('.advantages__more').addClass('advantages--animation');
+        },
+        function () {
+            $('.production__mini-solid').removeClass('production__mini-solid--animation');
+            $('.advantages__more').removeClass('advantages--animation');
+            $(this).removeClass('advantages--animation');
+
+        }
+    );
 });

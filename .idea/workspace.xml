@@ -2,14 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2559e644-9d6e-4b6c-808b-bb39acb6e6bf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/collaboration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/completed-projects.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gallery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/new-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/product-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/components/collaboration/form.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/components/completed-projects/completed-projects.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/components/contact/big-maps.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/components/contact/form-refresh.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/components/gallery/gallery.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/components/product-2/first-screen-slider.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/components/product-2/production--refresh.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/_document-footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_document-footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/_document-header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_document-header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/advantages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/advantages.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/big-slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/big-slider.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/components/product-filter.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/product-filter.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/components/product.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/product.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/production.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/production.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/slider-production.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/slider-production.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +79,8 @@
       <workItem from="1586532427339" duration="804000" />
       <workItem from="1586548746280" duration="14043000" />
       <workItem from="1586688907416" duration="10097000" />
-      <workItem from="1586713959203" duration="14949000" />
+      <workItem from="1586713959203" duration="22362000" />
+      <workItem from="1586850906824" duration="6791000" />
     </task>
     <servers />
   </component>
@@ -81,15 +104,15 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="226" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1586532644536" />
-    <state x="1501" y="72" width="1087" height="633" key="find.popup" timestamp="1586773183937">
+    <state x="1501" y="72" width="1087" height="633" key="find.popup" timestamp="1586876569073">
       <screen x="1440" y="23" width="1366" height="745" />
     </state>
     <state x="64" y="59" width="1145" height="764" key="find.popup/1440.0.1366.768/0.0.1440.900@0.0.1440.900" timestamp="1586640428297" />
-    <state x="1501" y="72" width="1087" height="633" key="find.popup/1440.23.1366.745/0.23.1440.832@1440.23.1366.745" timestamp="1586773183937" />
-    <state x="1805" y="185" width="670" height="560" key="search.everywhere.popup" timestamp="1586770398836">
+    <state x="1501" y="72" width="1087" height="633" key="find.popup/1440.23.1366.745/0.23.1440.832@1440.23.1366.745" timestamp="1586876569073" />
+    <state x="1805" y="185" width="670" height="560" key="search.everywhere.popup" timestamp="1586784830323">
       <screen x="1440" y="23" width="1366" height="745" />
     </state>
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/1440.0.1366.768/0.0.1440.900@0.0.1440.900" timestamp="1586640286785" />
-    <state x="1805" y="185" width="670" height="560" key="search.everywhere.popup/1440.23.1366.745/0.23.1440.832@1440.23.1366.745" timestamp="1586770398836" />
+    <state x="1805" y="185" width="670" height="560" key="search.everywhere.popup/1440.23.1366.745/0.23.1440.832@1440.23.1366.745" timestamp="1586784830323" />
   </component>
 </project>
