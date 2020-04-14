@@ -95,4 +95,7 @@
   .production--refresh .production__body .production__images::after{
     transform: translate(0,0);
   }
+  .production__text {
+    padding: 0 20px;
+  }
 }

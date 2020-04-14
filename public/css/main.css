@@ -185,6 +185,7 @@ html {
     top: calc(100% + 20px);
     list-style: none;
     width: 130px;
+    z-index: 99;
     margin-left: 0;
     background: #ffffff;
     border: 1px solid #f1f1f1; }
@@ -819,7 +820,31 @@ html {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  transform: rotate(-90deg); }
+  transform: rotate(-90deg);
+  z-index: 9999; }
+  .link-absolute-left > a {
+    text-decoration: none;
+    background: #1F62A8;
+    width: 116px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex !important;
+    transition: .5s; }
+    .link-absolute-left > a:hover {
+      background-color: #133c67; }
+    .link-absolute-left > a > i {
+      margin-left: 5px;
+      transition: .5s; }
   .link-absolute-left > p {
     font-style: normal;
     font-weight: bold;
@@ -844,24 +869,69 @@ html {
       right: auto;
       left: -20.5px;
       margin: auto; }
-  .link-absolute-left > a {
-    text-decoration: none;
-    background: #1F62A8;
-    width: 116px;
-    height: 44px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 10px;
-    line-height: 12px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #FFFFFF; }
-    .link-absolute-left > a > i {
-      margin-left: 5px; }
+  .link-absolute-left .production__link-parents {
+    list-style: none;
+    padding-left: 0; }
+    .link-absolute-left .production__link-parents > li {
+      position: relative; }
+      .link-absolute-left .production__link-parents > li > a {
+        text-decoration: none;
+        background: #1F62A8;
+        width: 116px;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        display: flex !important;
+        transition: .5s; }
+        .link-absolute-left .production__link-parents > li > a:hover {
+          background-color: #133c67; }
+        .link-absolute-left .production__link-parents > li > a > i {
+          margin-left: 5px;
+          transition: .5s; }
+      .link-absolute-left .production__link-parents > li .production__link-parents--open > i {
+        transform: rotate(-180deg); }
+      .link-absolute-left .production__link-parents > li .production__link-absolute-children {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 100%;
+        background-color: #1F62A8 !important;
+        list-style: none;
+        padding: 20px 0;
+        text-align: center;
+        bottom: auto; }
+        .link-absolute-left .production__link-parents > li .production__link-absolute-children > li > a {
+          text-decoration: none;
+          background: #1F62A8;
+          width: 116px;
+          height: 44px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 10px;
+          line-height: 12px;
+          letter-spacing: 1px;
+          transition: .5s;
+          text-transform: uppercase;
+          color: #FFFFFF; }
+          .link-absolute-left .production__link-parents > li .production__link-absolute-children > li > a:hover {
+            transform: scale(1.1);
+            color: #191919; }
 
 .icon-down-menu--white {
   width: 5px;
@@ -2370,7 +2440,9 @@ html {
   .production--refresh .production__body .production__images .link--center {
     transform: translate(0, 0); }
   .production--refresh .production__body .production__images::after {
-    transform: translate(0, 0); } }
+    transform: translate(0, 0); }
+  .production__text {
+    padding: 0 20px; } }
 
 .form {
   position: relative;

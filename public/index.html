@@ -174,7 +174,16 @@
             </section>
             <section id="yak1" class="production">
                 <div class="production__link-absolute link-absolute-left">
-                    <a href="#">Продукція <i class="icon-down-menu icon-down-menu--white"></i></a>
+                    <ul href="#" class="production__link-parents">
+                        <li>
+                            <a href="" class="production__link-parents-a">Продукція <i class="icon-down-menu icon-down-menu--white"></i></a>
+                            <ul class="production__link-absolute-children">
+                                <li><a href="">Продукція 1</a></li>
+                                <li><a href="">Продукція 1</a></li>
+                                <li><a href="">Продукція 1</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                     <p>lipprofil</p>
                 </div>
                 <div class="production__body">
@@ -185,7 +194,7 @@
                         <h2 class="production__title title-h2">Продукція компанії</h2>
                         <p class="production__text text-default">Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, <span>sed do eiusmod tempor incididunt.</span></p>
-                        <div class="production__mini-solid"></div>
+                        <div class="production__mini-solid production__mini-solid--animation"></div>
                         <p class="production__text text-default">Ut enim ad minim veniam, quis nostrud exercitation
                             ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
                             reprehenderit in voluptate velit esse cillum.</p>

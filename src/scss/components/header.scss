@@ -141,6 +141,7 @@
     top: calc(100% + 20px);
     list-style: none;
     width: 130px;
+    z-index: 99;
     margin-left: 0;
     background: $c-white;
     border: 1px solid #f1f1f1;

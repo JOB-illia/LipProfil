@@ -2,6 +2,7 @@
   position: relative;
   margin-top: 150px;
   &__link-absolute {
+
   }
   &__body {
     @include container(1150px);
@@ -60,6 +61,30 @@
   top: -170px;
   @include flc-center-center();
   transform: rotate(-90deg);
+  z-index: 9999;
+  > a {
+    text-decoration: none;
+    background: #1F62A8;
+    width: 116px;
+    height: 44px;
+    @include flc-center-center();
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex!important;
+    transition: .5s;
+    &:hover {
+      background-color: darken($c-blue, 15%);
+    }
+    > i {
+      margin-left: 5px;
+      transition: .5s;
+    }
+  }
   > p {
     font-style: normal;
     font-weight: bold;
@@ -82,22 +107,73 @@
       margin: auto;
     }
   }
-  > a {
-    text-decoration: none;
-    background: #1F62A8;
-    width: 116px;
-    height: 44px;
-    @include flc-center-center();
-    font-style: normal;
-    font-weight: bold;
-    font-size: 10px;
-    line-height: 12px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    > i {
-      margin-left: 5px;
+  .production__link-parents {
+    list-style: none;
+    padding-left: 0;
+    > li {
+      position: relative;
+      > a {
+        text-decoration: none;
+        background: #1F62A8;
+        width: 116px;
+        height: 44px;
+        @include flc-center-center();
+        font-style: normal;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        display: flex!important;
+        transition: .5s;
+        &:hover {
+          background-color: darken($c-blue, 15%);
+        }
+        > i {
+          margin-left: 5px;
+          transition: .5s;
+        }
+      }
+      .production__link-parents--open{
+          > i {
+            transform: rotate(-180deg);
+          }
+      }
+      .production__link-absolute-children {
+        display: none;
+        @include full-abs();
+        top: 100%;
+        background-color: $c-blue!important;
+        list-style: none;
+        padding: 20px 0;
+        text-align: center;
+
+        bottom: auto;
+        >li {
+          > a {
+            text-decoration: none;
+            background: #1F62A8;
+            width: 116px;
+            height: 44px;
+            @include flc-center-center();
+            font-style: normal;
+            font-weight: bold;
+            font-size: 10px;
+            line-height: 12px;
+            letter-spacing: 1px;
+            transition: .5s;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            &:hover {
+              transform: scale(1.1);
+              color: $c-default
+            }
+          }
+        }
+      }
     }
+
   }
 
 }
